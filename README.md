@@ -10,7 +10,8 @@ Return single document
 `GET /user/generate?numberOfRecords=?`
 Inserts data into database (numberOfRecords - number of entries to insert to database) 
 
-_[numberOfRecords]_
-Ratio: number=1000 ~== 4GB of data
-Default value = 1
-Max numberOfRecords = 4000
+##### Params
+_numberOfRecords_
+- Ratio: number=1000 ~== 4GB of data
+- Default value = 1
+- Max numberOfRecords = 4000
