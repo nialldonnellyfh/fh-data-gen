@@ -7,6 +7,7 @@ var app = express();
 // Enable CORS for all requests
 app.use(cors());
 
+app.use('/sys', mbaasExpress.sys());
 app.use('/mbaas', mbaasExpress.mbaas);
 // allow serving of static files from the public directory
 app.use(express.static(__dirname + '/public'));
