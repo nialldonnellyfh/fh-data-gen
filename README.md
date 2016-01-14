@@ -5,13 +5,16 @@ Using dummy json to produce large datasets.
 ###Endpoints
 
 `GET /user`
-Return single document
+Get random user;
 
 `GET /user/generate?numberOfRecords=?`
 Inserts data into database (numberOfRecords - number of entries to insert to database) 
 
-##### Params
-_numberOfRecords_
-- Ratio: number=1000 ~== 4GB of data
-- Default value = 1
-- Max numberOfRecords = 4000
+###Development
+
+Local development/testing
+`env FH_USE_LOCAL_DB=true node application.js`
+
+or if love grunt:
+
+`grunt serve` 
